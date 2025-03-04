@@ -12,7 +12,7 @@
 @theme {
   --font-secondary: "Inter", "sans-serif";
   --font-primary: "Poppins", "sans-serif";
-
+  --color-backgroundColor:#f5f5f5
   --color-white: #ffffff;
   --color-classyBlue: #254a76;
   --color-black: #262626;

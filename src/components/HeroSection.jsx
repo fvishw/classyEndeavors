@@ -32,7 +32,7 @@ function HeroSection() {
       </div>
       {/* upload section */}
       <div className="w-[707px] h-[63px] mt-10 m-auto flex items-center justify-between">
-        <div className="w-[484px] h-full rounded-4xl border-2 border-black flex items-center justify-between">
+        <div className="w-[484px] h-full rounded-4xl border-1 border-black flex items-center justify-between">
           <p className="ml-7">Drop your file here</p>
           <button className=" w-[149px] h-[47px] bg-classyBlue text-white  flex items-center justify-center m-2  py-3 rounded-4xl">
             {" "}
