@@ -17,7 +17,7 @@ function Header() {
           </div>
         </div>
         {/* center navbar */}
-        <div className="w-[409px]  font-primary ">
+        <div className="w-[409px]  font-primary text-black">
           <ul className="flex justify-between">
             <li>Features</li>
             <li>Why Choose Us</li>
@@ -31,7 +31,7 @@ function Header() {
             <img src={discordLogo} alt="" />
           </div>
           <div>
-            <button className="bg-classyBlue text-white font-primary py-2 px-4 rounded-lg ml-5 text-sm">
+            <button className="bg-classyBlue text-white font-primary py-2 px-4 rounded-lg ml-5 text-sm hover:cursor-pointer">
               Get Started
             </button>
           </div>

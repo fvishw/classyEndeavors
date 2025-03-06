@@ -1,10 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import PlanCard from "./PlanCard";
 
 const plans = [
   {
     title: "FREE",
-    price: "0",
+    monthlyPrice: 0,
     features: [
       "5 documents a month",
       "Activity timeline",
@@ -14,7 +14,7 @@ const plans = [
   },
   {
     title: "Premium",
-    price: "10",
+    monthlyPrice: 10,
     features: [
       "Unlimited documents",
       "Unlimited signees",
@@ -24,7 +24,7 @@ const plans = [
   },
   {
     title: "Teams",
-    price: "8",
+    monthlyPrice: 8,
     features: [
       "Everything from Premium",
       "Team management",
@@ -34,22 +34,41 @@ const plans = [
 ];
 
 function Pricing() {
+  const [isYearly, setIsYearly] = useState(false);
+
+  const discountedPlans = plans.map((plan) => ({
+    ...plan,
+    price: isYearly
+      ? (plan.monthlyPrice * 12 * 0.9).toFixed(1)
+      : plan.monthlyPrice,
+  }));
+
   return (
     <div className="w-[1191px] h-[738px]  m-auto mt-10">
       <div className="text-center font-bold text-3xl">
         <p>Pick your plan. We make this part easy too.</p>
       </div>
       <div className="w-[300px] h-[60px] flex bg-white rounded-4xl m-auto mt-8.5 border-1 border-black">
-        <div className="w-1/2 h-full bg-classyBlue text-white font-primary flex justify-center items-center rounded-4xl">
+        <button
+          className={`w-1/2 h-full bg-classyBlue font-primary flex justify-center items-center rounded-4xl hover:cursor-pointer ${
+            !isYearly ? "bg-classyBlue text-white" : "bg-white text-black"
+          }`}
+          onClick={() => setIsYearly(false)}
+        >
           Monthly
-        </div>
-        <div className="w-1/2 h-full bg-white font-primary flex items-center justify-center rounded-4xl">
+        </button>
+        <button
+          className={`w-1/2 h-full font-primary flex items-center justify-center rounded-4xl hover:cursor-pointer ${
+            isYearly ? "bg-classyBlue text-white" : "bg-white text-black"
+          }`}
+          onClick={() => setIsYearly(true)}
+        >
           Yearly
-        </div>
+        </button>
       </div>
       <div className="flex justify-between mt-16">
-        {plans.map((plan, index) => (
-          <PlanCard key={index} {...plan} />
+        {discountedPlans.map((plan, index) => (
+          <PlanCard key={index} {...plan} isYearly={isYearly} />
         ))}
       </div>
     </div>

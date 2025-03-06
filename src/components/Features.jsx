@@ -30,7 +30,7 @@ function Features() {
             />
           ))}
         </div>
-        <div className="w-[737px] h-[715px] border-1 border-black rounded-3xl "></div>
+        <div className="w-[737px] h-[715px] border-1 border-black rounded-3xl bg-white z-1"></div>
       </div>
     </div>
   );

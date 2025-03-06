@@ -14,7 +14,7 @@ function ClientLogos() {
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-lightBlueGrad via-greyishLightBlue to-classyBlue">
             64.0k
           </span>{" "}
-          businesses and individuals have signed with
+          businesses and individuals have signed with {" "}
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-lightBlueGrad via-greyishLightBlue to-classyBlue">
             DocuTech
           </span>

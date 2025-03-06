@@ -8,7 +8,7 @@ import message from "../assets/footer/message.png";
 import whatsapp from "../assets/footer/whatsapp.png";
 function Footer() {
   return (
-    <div className="w-full h-[128px] rounded-t-4xl bg-classyBlue mt-5 flex items-center justify-around text-white ">
+    <div className="w-full h-[128px]  rounded-t-4xl bg-classyBlue mt-5 flex items-center justify-between text-white px-29">
       <div className="">
         <div className="w-[162px] h-fit p-1 flex justify-center items-center ">
           <img src={docIcon} alt="" />

@@ -67,7 +67,7 @@ const userReviews = [
 function Testimonials() {
   const settings = {
     dots: false,
-    infinite: false,
+    infinite: true,
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 3,
@@ -82,7 +82,7 @@ function Testimonials() {
         </p>
       </div>
 
-      <div className="">
+      <div className=" ">
         <Slider {...settings}>
           {userReviews.map((user, index) => (
             <TestimonialCard key={index} {...user} />

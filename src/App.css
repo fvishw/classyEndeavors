@@ -12,8 +12,7 @@
 @theme {
   --font-secondary: "Inter", "sans-serif";
   --font-primary: "Poppins", "sans-serif";
-  --color-backgroundColor:#f5f5f5
-  --color-white: #ffffff;
+  --color-backgroundColor: #f5f5f5;
   --color-classyBlue: #254a76;
   --color-black: #262626;
   --color-sunYellow: #e7e94f;
@@ -26,4 +25,76 @@
   --color-shdowPink: #f5d5ef;
   --ease-fluid: cubic-bezier(0.3, 0, 0, 1);
   --ease-snappy: cubic-bezier(0.2, 0, 0, 1);
+}
+@keyframes textChange {
+  0%,
+  30% {
+    content: "Create";
+  }
+  33%,
+  63% {
+    content: "Sign";
+  }
+  66%,
+  96% {
+    content: "Convert";
+  }
+}
+
+.animate-text-change::after {
+  content: "Create";
+  animation: textChange 6s infinite;
+}
+
+.ellipse-1 {
+  position: absolute;
+  width: 879px;
+  height: 877px;
+  left: -530px;
+  top: 1930px;
+  z-index: -1;
+
+  background: #254a76;
+  opacity: 0.5;
+  filter: blur(250px);
+}
+
+.ellipse-2 {
+  position: absolute;
+  width: 400px;
+  height: 877px;
+  left: 879px;
+  top: 1915px;
+  z-index: -1;
+
+  background: #254a76;
+  opacity: 0.5;
+  filter: blur(250px);
+}
+.ellipse-3 {
+  position: absolute;
+  width: 879px;
+  height: 877px;
+  left: -589px;
+  top: 450px;
+  z-index: -1;
+
+  background: #254a76;
+  opacity: 0.5;
+  filter: blur(250px);
+}
+
+.ellipse-4 {
+  position: absolute;
+  height: 877px;
+  width: 400px;
+  /* left: calc(100% - 879px); */
+  left: 943px;
+
+  top: 464px;
+  z-index: -1;
+
+  background: #254a76;
+  opacity: 0.5;
+  filter: blur(250px);
 }

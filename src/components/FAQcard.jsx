@@ -7,10 +7,8 @@ function FAQcard({ que, ans }) {
 
   return (
     <div
-      className={`w-[1190px]  text-white  my-2 rounded-3xl transition-all duration-300 m-auto  ${
-        isOpen
-          ? "h-[264px] shadow-[5px_5px_10px_rgba(229,170,222,1)] "
-          : "h-[100px]"
+      className={`w-[1190px]  text-white  my-4 rounded-3xl transition-all duration-300 m-auto  ${
+        isOpen ? "h-[264px] shadow-[5px_5px_10px_2px_#CF28B066] " : "h-[100px]"
       }`}
     >
       {/* Question Section */}
