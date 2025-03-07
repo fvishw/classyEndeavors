@@ -19,10 +19,10 @@ function Header() {
         {/* center navbar */}
         <div className="w-[409px]  font-primary text-black">
           <ul className="flex justify-between">
-            <li>Features</li>
-            <li>Why Choose Us</li>
-            <li>Pricing</li>
-            <li>FAQ</li>
+            <li className="hover:cursor-pointer">Features</li>
+            <li className="hover:cursor-pointer">Why Choose Us</li>
+            <li className="hover:cursor-pointer">Pricing</li>
+            <li className="hover:cursor-pointer">FAQ</li>
           </ul>
         </div>
         {/* right navbar */}

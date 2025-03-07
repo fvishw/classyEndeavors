@@ -14,6 +14,10 @@ const features = [
     isFirst: false,
     title: "Trusted by Thousands",
   },
+  {
+    isFirst: false,
+    title: "End-to-end encryption",
+  },
 ];
 
 function Features() {

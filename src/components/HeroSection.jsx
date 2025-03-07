@@ -34,14 +34,15 @@ function HeroSection() {
       </div>
       {/* upload section */}
       <div className="w-[707px] h-[63px] mt-10 m-auto flex items-center justify-between">
-        <div className="w-[484px] h-full rounded-4xl border-1 border-black flex items-center justify-between">
+        <form className="w-[484px] h-full rounded-4xl border-1 border-black flex items-center justify-between">
+          
           <p className="ml-7">Drop your file here</p>
           <button className=" w-[149px] h-[47px] bg-classyBlue text-white  flex items-center justify-center m-2  py-3 rounded-4xl hover:cursor-pointer">
             {" "}
             <img src={cloudIcon} className="mr-1.5" alt="" />
             Upload File
           </button>
-        </div>
+        </form>
         <p>OR</p>
         <button className="w-[181px] h-[47px] bg-classyBlue text-white rounded-4xl flex items-center justify-center hover:cursor-pointer">
           <img className="mr-2" src={magicIcon} alt="" />

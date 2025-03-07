@@ -18,21 +18,21 @@ function Footer() {
       </div>
       <div className="flex flex-col justify-center items-end mt-3">
         <div className="w-[233px]  justify-between flex items-center p-1 border-b-1 border-white pb-2">
-          <img src={whatsapp} alt="" />
-          <img src={facebook} alt="" />
-          <img src={linkedin} alt="" />
-          <img src={discord} alt="" />
-          <img src={envelope} alt="" />
-          <img src={message} alt="" />
+          <img className="hover:cursor-pointer " src={whatsapp} alt="" />
+          <img className="hover:cursor-pointer " src={facebook} alt="" />
+          <img className="hover:cursor-pointer " src={linkedin} alt="" />
+          <img className="hover:cursor-pointer " src={discord} alt="" />
+          <img className="hover:cursor-pointer " src={envelope} alt="" />
+          <img className="hover:cursor-pointer " src={message} alt="" />
         </div>
         <div className="">
           <ul className="font-primary text-base  gap-5 text-white flex">
-            <li>Features</li>
-            <li>Why Choose Us</li>
-            <li>Pricing</li>
-            <li>FAQ</li>
-            <li>Legal terms</li>
-            <li>Privacy policy</li>
+            <li className="hover:cursor-pointer">Features</li>
+            <li className="hover:cursor-pointer">Why Choose Us</li>
+            <li className="hover:cursor-pointer">Pricing</li>
+            <li className="hover:cursor-pointer">FAQ</li>
+            <li className="hover:cursor-pointer">Legal terms</li>
+            <li className="hover:cursor-pointer">Privacy policy</li>
           </ul>
         </div>
       </div>
