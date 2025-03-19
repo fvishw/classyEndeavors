@@ -2,7 +2,7 @@ import React from "react";
 import userImg from "../assets/testimonials/userImg.png";
 function TestimonialCard({ review, stars }) {
   return (
-    <div className="w-[350px] h-60 mb-5 rounded-2xl bg-backgroundColor p-5 shadow-[0px_7px_8px_0px_#00000040] m-auto z-1">
+    <div className="lg:w-[350px] w-[80%] lg:h-60 mb-5 rounded-2xl bg-backgroundColor p-5 shadow-[0px_7px_8px_0px_#00000040] m-auto z-1">
       <div className="mx-3 mt-3 ">
         <img
           className="rounded-4xl shadow-[0px_4px_8px_rgba(0,0,0,0.25)]"

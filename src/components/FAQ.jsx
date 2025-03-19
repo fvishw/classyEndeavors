@@ -22,9 +22,11 @@ const faqs = [
 
 function FAQ() {
   return (
-    <div className="mt-12">
+    <div className="mt-9 lg:mt-12">
       <div>
-        <h2 className="font-primary font-bold text-3xl text-center">FAQs</h2>
+        <h2 className="font-primary font-bold text-2xl lg:text-3xl text-center">
+          FAQs
+        </h2>
       </div>
       <div>
         {faqs.map((faq, index) => (

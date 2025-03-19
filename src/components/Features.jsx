@@ -23,8 +23,10 @@ const features = [
 function Features() {
   return (
     <div className="mt-9">
-      <p className="font-bold text-3xl text-center">Why Choose Docutech</p>
-      <div className="mt-10 w-[1200px] m-auto flex justify-between ">
+      <p className="font-bold  text-2xl lg:text-3xl text-center">
+        Why Choose Docutech
+      </p>
+      <div className="mt-10 lg:w-[1200px]  m-auto flex flex-col lg:flex-row justify-between ">
         <div className="">
           {features.map((feature, index) => (
             <FeatureCard
@@ -34,7 +36,7 @@ function Features() {
             />
           ))}
         </div>
-        <div className="w-[737px] h-[715px] border-1 border-black rounded-3xl bg-white z-1"></div>
+        <div className="lg:w-[737px] w-[95%] h-96 mx-auto lg:h-[715px] border-1 border-black rounded-3xl bg-white z-1"></div>
       </div>
     </div>
   );

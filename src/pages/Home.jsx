@@ -13,8 +13,8 @@ function Home() {
     <div className="relative overflow-hidden">
       <div className="absolute w-[879px] h-[877px] left-[-585px] top-[461px]  opacity-50 bg-[#254a76] rounded-full blur-[500px] "></div>
       <div className="absolute w-[879px] h-[877px] right-[-500px] top-[464px] bg-[#254A76] opacity-50  blur-[500px]  rounded-full -z-1"></div>
-      <div className="w-[879px] h-[877px] absolute top-[2000px] left-[-500px] opacity-50 bg-[#254a76] rounded-full blur-[500px] -z-1" />
-      <div className="w-[879px] h-[877px] absolute top-[2000px] right-[-480px] opacity-50 bg-[#254a76] rounded-full blur-[500px] -z-1" />
+      <div className="absolute w-[879px] h-[877px]  top-[2000px] left-[-500px] opacity-50 bg-[#254a76] rounded-full blur-[500px] -z-1" />
+      <div className="absolute w-[879px] h-[877px]  top-[2000px] right-[-480px] opacity-50 bg-[#254a76] rounded-full blur-[500px] -z-1" />
 
       <Header />
       <HeroSection />

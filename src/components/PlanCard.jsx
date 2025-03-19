@@ -4,19 +4,22 @@ function PlanCard({ title, price, features, isFree, isYearly }) {
   const palnDuration = isYearly ? "Year" : "Month";
   return (
     <div
-      className={`w-[371px] h-[535px]   p-6 border-1 font-primary flex flex-col justify-between shadow-[5px_5px_10px_2px_#CF28B080]
+      className={`lg:w-[371px] w-[72%] mx-auto lg:h-[535px]   p-6 border-1 font-primary flex flex-col justify-between shadow-[5px_5px_10px_2px_#CF28B080]
   ${
     isFree
       ? "bg-white text-classyBlue border-black"
       : "bg-classyBlue text-white border-classyBlue"
   }`}
     >
-      <div className="p-6.5 ">
+      <div className="lg:p-6.5 p-4">
         <h2 className="text-xl font-semibold ">{title}</h2>
 
         <p className="mt-2">
-          USD <span className="text-3xl font-bold">{parseInt(price)}</span>/
-          {palnDuration}
+          USD{" "}
+          <span className="lg:text-3xl text-2xl font-bold">
+            {parseInt(price)}
+          </span>
+          /{palnDuration}
         </p>
         {title == "Teams" && (
           <p className="mt-2 text-sm">
@@ -32,7 +35,7 @@ function PlanCard({ title, price, features, isFree, isYearly }) {
 
         <ul className="mt-9 space-y-2 ">
           {features.map((feature, index) => (
-            <li key={index} className="flex items-center text-xl">
+            <li key={index} className="flex items-center text-base gap-y-2 lg:text-xl">
               • {feature}
             </li>
           ))}
