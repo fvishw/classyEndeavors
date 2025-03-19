@@ -101,7 +101,10 @@ function Testimonials() {
     prevArrow: <PrevArrow />,
   };
   return (
-    <div className="lg:w-[1230px] w-full lg:h-80 mt-10 m-auto">
+    <div
+      className="lg:w-[1230px] w-full lg:h-80 mt-10 m-auto"
+      id="why-choose-us"
+    >
       <div>
         <p className="font-bold lg:text-3xl text-2xl text-center mb-6 lg:mb-10">
           What our users say{" "}

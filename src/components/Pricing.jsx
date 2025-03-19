@@ -44,7 +44,10 @@ function Pricing() {
   }));
 
   return (
-    <div className="lg:w-[1191px] lg:h-[738px]  m-auto mt-7 lg:mt-10">
+    <div
+      className="lg:w-[1191px] lg:h-[738px]  m-auto mt-7 lg:mt-10"
+      id="pricing"
+    >
       <div className="text-center font-bold text-xl lg:text-3xl">
         <p className="block lg:hidden">Pick your plan</p>
         <p className="hidden lg:block">
@@ -77,7 +80,6 @@ function Pricing() {
       </div>
     </div>
   );
-  4;
 }
 
 export default Pricing;

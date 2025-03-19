@@ -12,6 +12,7 @@ function FAQcard({ que, ans }) {
           ? "lg:h-[264px] h-68 shadow-[5px_5px_10px_2px_#CF28B066] "
           : "lg:h-[100px]"
       }`}
+      id="faq"
     >
       {/* Question Section */}
       <div

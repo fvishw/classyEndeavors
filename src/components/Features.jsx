@@ -22,7 +22,7 @@ const features = [
 
 function Features() {
   return (
-    <div className="mt-9">
+    <div className="mt-9" id="features">
       <p className="font-bold  text-2xl lg:text-3xl text-center">
         Why Choose Docutech
       </p>

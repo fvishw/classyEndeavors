@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from "react";
 import rightIcon from "../assets/heroSection/right.png";
-import cloudIcon from "../assets/heroSection/cloudUpload.png";
-import magicIcon from "../assets/heroSection/magicIcon.png";
-import ShadowGradient from "./ShadowGradient";
+import { FaCloudUploadAlt, FaMagic } from "react-icons/fa";
 
 function HeroSection() {
   return (
@@ -44,26 +42,26 @@ function HeroSection() {
           <p className="ml-7">Drop your file here</p>
           <button className=" w-[149px] h-[47px] bg-classyBlue text-white  flex items-center justify-center m-2  py-3 rounded-4xl hover:cursor-pointer">
             {" "}
-            <img src={cloudIcon} className="mr-1.5" alt="" />
+            <FaCloudUploadAlt className="text-white h-8 w-6 mr-2" />
             Upload File
           </button>
         </form>
         <p>OR</p>
         <button className="w-[181px] h-[47px] bg-classyBlue text-white rounded-4xl flex items-center justify-center hover:cursor-pointer">
-          <img className="mr-2" src={magicIcon} alt="" />
+          <FaMagic className="text-white h-6 w-4 mr-2" />
           Generate with AI
         </button>
       </div>
       {/* mobile upload section */}
       <div className=" flex md:hidden items-center  mx-auto justify-between w-[72%] text-sm mt-7">
-        <button className=" w-[149px] h-[47px] bg-classyBlue text-white   flex items-center justify-center  py-2 px-1 rounded-4xl hover:cursor-pointer">
+        <button className=" w-[149px] h-[47px] bg-classyBlue text-white text-sm  flex items-center justify-center  p-2.5 rounded-4xl hover:cursor-pointer">
           {" "}
-          <img src={cloudIcon} className="mr-1" alt="" />
+          <FaCloudUploadAlt className="text-white h-7 w-5 mr-2" />
           Upload File
         </button>
         <p className="mx-2">OR</p>
-        <button className="w-[181px] h-[47px] bg-classyBlue text-white rounded-4xl flex items-center justify-center  hover:cursor-pointer">
-          <img className="mr-2" src={magicIcon} alt="" />
+        <button className="w-[181px] h-[47px] bg-classyBlue text-white text-sm rounded-4xl flex items-center justify-center p-2.5 hover:cursor-pointer">
+          <FaMagic className="text-white h-6 w-4 mr-2" />
           Generate with AI
         </button>
       </div>
